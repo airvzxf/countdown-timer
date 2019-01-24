@@ -1,8 +1,47 @@
 body {
-	margin: 0;
+	margin: 0px;
 	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
 	font-size: 8pt;
+}
+
+#counter-container {
+	display: inline-block;
+	/* NOTE: If we don't have the `inline-block` should be use this config to break the float and prevent the footer section go at the same level. */
+	/* overflow: auto;
+	clear: both; */
+}
+
+.counter-box {
+	width: 110px;
+	margin: 0px 8px;
+	float: left;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+}
+
+.counter-box:first-child {
+	margin-left: 0px;
+}
+
+.counter-box:last-child {
+	margin-right: 0px;
+}
+
+.counter-box p {
+	margin: 20px 0px;
+}
+
+.counter-box-number {
+	font-size: 24pt;
+	font-weight: lighter;
+}
+
+.counter-box-type {
+	font-size: 12pt;
+	color: #AAA;
+	font-weight: bold;
 }

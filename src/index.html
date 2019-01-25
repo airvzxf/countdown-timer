@@ -4,9 +4,11 @@
 
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
-    <link href="css/main.css" media="screen" rel="stylesheet" type="text/css"/>
     <!-- TODO: Create a responsive version for Mobile -->
     <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <link href="css/main.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/main.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="countdown-timer.js"></script>
     <title>Countdown Timer</title>
 </head>
 
@@ -21,7 +23,7 @@
 <section id="counter-container">
     <div class="counter-box">
         <p>
-            <span class="counter-box-number">1</span>
+            <span id="days" class="counter-box-number">1</span>
             <br/>
             <span class="counter-box-type">Days</span>
         </p>
@@ -29,7 +31,7 @@
 
     <div class="counter-box">
         <p>
-            <span class="counter-box-number">23</span>
+            <span id="hours" class="counter-box-number">23</span>
             <br/>
             <span class="counter-box-type">Hours</span>
         </p>
@@ -37,7 +39,7 @@
 
     <div class="counter-box">
         <p>
-            <span class="counter-box-number">27</span>
+            <span id="minutes" class="counter-box-number">27</span>
             <br/>
             <span class="counter-box-type">Minutes</span>
         </p>
@@ -45,7 +47,7 @@
 
     <div class="counter-box">
         <p>
-            <span class="counter-box-number">47</span>
+            <span id="seconds" class="counter-box-number">47</span>
             <br/>
             <span class="counter-box-type">Seconds</span>
         </p>

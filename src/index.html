@@ -4,10 +4,10 @@
 
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
-    <!-- TODO: Create a responsive version for Mobile -->
+    <!-- TODO: Create countdown_timer responsive version for Mobile -->
     <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
     <link href="style/main.css" media="screen" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="javascript/countdown-timer.js"></script>
+    <script src="javascript/countdown-timer.js" type="text/javascript"></script>
     <title>Countdown Timer</title>
 </head>
 
@@ -22,7 +22,7 @@
 <section id="counter-container">
     <div class="counter-box">
         <p>
-            <span id="days" class="counter-box-number">1</span>
+            <span class="counter-box-number" id="days">0</span>
             <br/>
             <span class="counter-box-type">Days</span>
         </p>
@@ -30,7 +30,7 @@
 
     <div class="counter-box">
         <p>
-            <span id="hours" class="counter-box-number">23</span>
+            <span class="counter-box-number" id="hours">0</span>
             <br/>
             <span class="counter-box-type">Hours</span>
         </p>
@@ -38,7 +38,7 @@
 
     <div class="counter-box">
         <p>
-            <span id="minutes" class="counter-box-number">27</span>
+            <span class="counter-box-number" id="minutes">0</span>
             <br/>
             <span class="counter-box-type">Minutes</span>
         </p>
@@ -46,7 +46,7 @@
 
     <div class="counter-box">
         <p>
-            <span id="seconds" class="counter-box-number">47</span>
+            <span class="counter-box-number" id="seconds">0</span>
             <br/>
             <span class="counter-box-type">Seconds</span>
         </p>
@@ -56,6 +56,17 @@
 <footer>
     <p>Copyright 2019 Israel Roldan</p>
 </footer>
+
+<script type="text/javascript">
+    // TODO: Delete this date which check when the target date is expired.
+    // target_date = '2019-01-24 20:00:00';
+    target_date = '2019-01-31 23:00:00';
+
+    countdown_timer = new CountdownTimer(target_date);
+    countdown_timer.run(document);
+    // TODO: Delete this log.
+    console.log(countdown_timer);
+</script>
 
 </body>
 
